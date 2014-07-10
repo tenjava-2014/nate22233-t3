@@ -1,0 +1,3 @@
+name: nate22233-t3
+main: com.tenjava.entries.nate22233.t3.TenJava
+version: '${project.version}'
