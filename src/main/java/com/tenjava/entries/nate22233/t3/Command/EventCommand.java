@@ -56,19 +56,24 @@ public class EventCommand implements CommandExecutor {
 				}
 				if (args[0].equalsIgnoreCase("apocalypse")){
 					new Apocalypse().callEvent(plugin);
+					return true;
 				}
 				if (args[0].equalsIgnoreCase("mineralrain")){
 					new MineralRain().callEvent();
+					return true;
 				}
 				if (args[0].equalsIgnoreCase("acidrain")){
 					new AcidRain().callEvent(plugin);
+					return true;
 				}
 				if (args[0].equalsIgnoreCase("strobelight")){
 					new StrobeLight().callEvent(plugin);
+					return true;
 				}
 				else {
 					p.sendMessage("§cInvalid event!");
 					p.sendMessage("§cDo '/event help' to see a list of events.");
+					return true;
 				}
 			}
 		}
